@@ -7,7 +7,7 @@
 ### 1. HRSystem v2
 - Репозиторий: [whoaskeddd/hrsystem-v2](https://github.com/whoaskeddd/hrsystem-v2)
 - Стек: `React`, `Vite`, `TypeScript` (frontend), backend пока placeholder
-- Демо-видео: [HRSYSTEM.mp4](C:/Users/artem/Videos/NVIDIA/Desktop/HRSYSTEM.mp4)
+- Демо-видео: [HRSYSTEM.mp4](https://raw.githubusercontent.com/whoaskeddd/portfolio/main/assets/videos/HRSYSTEM.mp4)
 
 Запуск frontend:
 ```powershell
@@ -29,7 +29,7 @@ docker compose up --build
 ### 2. ShortFlow
 - Репозиторий: [whoaskeddd/shortflow](https://github.com/whoaskeddd/shortflow)
 - Стек: `FastAPI`, `PostgreSQL`, `Redis`, `MinIO`, `React Native (Expo)`
-- Демо-видео: [shortflowfull.mp4](C:/Users/artem/Videos/NVIDIA/Desktop/shortflowfull.mp4)
+- Демо-видео: [shortflowfull.mp4](https://raw.githubusercontent.com/whoaskeddd/portfolio/main/assets/videos/shortflowfull.mp4)
 
 Запуск backend + инфраструктуры:
 ```powershell
@@ -51,7 +51,7 @@ npx expo start
 ### 3. TheBestMessenger
 - Репозиторий: [whoaskeddd/thebestmessenger](https://github.com/whoaskeddd/thebestmessenger)
 - Стек: `FastAPI` (минимальный backend)
-- Демо-видео: [thebestmessenger.mp4](C:/Users/artem/Videos/NVIDIA/Desktop/thebestmessenger.mp4)
+- Демо-видео: [thebestmessenger.mp4](https://raw.githubusercontent.com/whoaskeddd/portfolio/main/assets/videos/thebestmessenger.mp4)
 
 Запуск backend:
 ```powershell
@@ -70,18 +70,20 @@ Frontend: пока отсутствует в репозитории.
 ### 4. Warehouse AI Accounting
 - Репозиторий: [whoaskeddd/warehouse-ai-accounting](https://github.com/whoaskeddd/warehouse-ai-accounting)
 - Формат: спецификация и план проекта
-- Демо-видео: [WAREHOUSEAI.mp4](C:/Users/artem/Videos/NVIDIA/Desktop/WAREHOUSEAI.mp4)
-
-Текущее состояние:
-- В репозитории нет реализованных `frontend`/`backend` для запуска.
-- Есть подробные требования и план реализации AI-системы складского учета.
-
+- Демо-видео: [WAREHOUSEAI.mp4](https://raw.githubusercontent.com/whoaskeddd/portfolio/main/assets/videos/WAREHOUSEAI.mp4)
+```powershell
+Запуск
+dotnet restore SmartStockAI.sln
+dotnet build SmartStockAI.sln
+dotnet run --project .\src\SmartStockAI.App\SmartStockAI.App.csproj
+dotnet run --project src/WarehouseManager.WinForms/WarehouseManager.WinForms.csproj
+```
 ---
 
 ### 5. Warehouse Manager v2
 - Репозиторий: [fndpc/warehouse-v2](https://github.com/fndpc/warehouse-v2)
 - Стек: `C#`, `.NET 8`, `WinForms`, `SQLite`
-- Демо-видео: [warehousev2.mp4](C:/Users/artem/Videos/NVIDIA/Desktop/warehousev2.mp4)
+- Демо-видео: [warehousev2.mp4](https://raw.githubusercontent.com/whoaskeddd/portfolio/main/assets/videos/warehousev2.mp4)
 
 Запуск:
 ```powershell
@@ -98,3 +100,4 @@ dotnet run --project src/WarehouseManager.WinForms/WarehouseManager.WinForms.csp
 ## Примечание по структуре
 `portfolio` — это родительский репозиторий с подключенными submodule (`repos/*`).
 Изменения в каждом проекте коммитятся внутри соответствующего submodule, после этого нужно коммитить обновленные ссылки submodule в `portfolio`.
+
